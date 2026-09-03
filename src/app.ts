@@ -20,8 +20,10 @@ import express, { type Express, type Request, type Response } from 'express';
 
 const app: Express = express();
 
+app.set('view engine', 'ejs');
+
 app.get('/', (req: Request, res: Response) => {
-  res.send('Hello World!');
+    res.render('layout', {title: 'TaStebin' } );
 });
 
 app.listen(8080);
