@@ -1,0 +1,31 @@
+{
+    "name": "jastebin",
+    "version": "0.0.0",
+    "description": "Jastebin is a Pastebin clone.",
+    "main": "app.ts",
+    "scripts": {
+        "clean": "make clean",
+        "build": "make",
+        "dev": "make dev"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/AlexandrPutenikhin/jastebin.git"
+    },
+    "keywords": [],
+    "author": "Alexandr Putenikhin",
+    "license": "AGPL-3.0-only",
+    "type": "module",
+    "bugs": {
+        "url": "https://github.com/AlexandrPutenikhin/jastebin/issues"
+    },
+    "homepage": "https://github.com/AlexandrPutenikhin/jastebin#readme",
+    "dependencies": {
+        "express": "^5.2.1",
+        "typescript": "^7.0.2"
+    },
+    "devDependencies": {
+        "@types/express": "^5.0.6",
+        "@types/node": "^26.4.1"
+    }
+}
