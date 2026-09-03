@@ -1,7 +1,7 @@
-# Jastebin
+# TaStebin
 
-Jastebin is a Pastebin clone that uses [express.js](https://expressjs.com/).
+TaStebin is a pastebin written in [TypeScript](https://www.typescriptlang.org/).
 
 ## License
 
-Jastebin is distributed under [AGPL-3.0-only](./LICENSE)
+TaStebin is distributed under [AGPL-3.0-only](./LICENSE)
