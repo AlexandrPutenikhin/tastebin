@@ -20,10 +20,11 @@
     "homepage": "https://github.com/AlexandrPutenikhin/jastebin#readme",
     "dependencies": {
         "ejs": "^6.0.1",
-        "express": "^5.2.1",
+        "express": "^5.2.1"
+    },
+    "devDependencies": {
         "@types/ejs": "^3.1.5",
         "@types/express": "^5.0.6",
         "@types/node": "^26.4.1"
-    },
-    "devDependencies": {}
+    }
 }
