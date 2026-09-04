@@ -20,6 +20,7 @@ import express, { type Express, type Request, type Response } from 'express';
 import 'dotenv/config';
 
 const app: Express = express();
+const port: Number = process.env.PORT;
 
 app.set('view engine', 'ejs');
 
@@ -28,4 +29,6 @@ app.get('/', (req: Request, res: Response) => {
     res.render('layout', { env: process.env });
 });
 
-app.listen(8080);
+app.listen(port, () => {
+    console.log(`Listening at ${port}`);
+});
