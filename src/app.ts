@@ -17,6 +17,7 @@
 */
 
 import express, { type Express, type Request, type Response } from 'express';
+import 'dotenv/config';
 
 const app: Express = express();
 
@@ -24,7 +25,7 @@ app.set('view engine', 'ejs');
 
 app.use('/static', express.static('static'));
 app.get('/', (req: Request, res: Response) => {
-    res.render('layout', {title: 'TaStebin' } );
+    res.render('layout', { env: process.env });
 });
 
 app.listen(8080);
