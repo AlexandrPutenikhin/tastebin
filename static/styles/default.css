@@ -7,6 +7,9 @@ html {
 body {
     width: 50%;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
@@ -21,6 +24,7 @@ main {
     background-color: rgb(36 31 49 / 0.8);
     padding-left: 16px;
     padding-right: 16px;
+    flex: auto;
 }
 
 footer {
@@ -36,8 +40,4 @@ a {
 
 a:hover {
     text-decoration: underline;
-}
-
-div.zeroHeight { /*I know it's hacky but I don't know any other way around it.*/
-    height: 0px;
 }
