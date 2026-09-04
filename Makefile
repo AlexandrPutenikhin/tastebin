@@ -1,10 +1,4 @@
-BUILD_DIR=build/
+SRC_DIR=src/
 
-all: clean
-	npx tsc
-
-clean:
-	rm -rf $(BUILD_DIR)
-
-dev: all
-	node $(BUILD_DIR)app.js
+dev:
+	node $(SRC_DIR)app.ts
