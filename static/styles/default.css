@@ -1,4 +1,39 @@
-body {
-    background-color: black;
+html {
+    background-image: url("/static/img/cubes.jpg");
     color: white;
+    font-family: sans-serif;
+}
+
+body {
+    width: 50%;
+    margin: auto;
+}
+
+header {
+    background-color: rgb(36 31 49 / 0.9);
+    padding: 4px;
+    display: flex;
+    gap: 4px;
+    font-size: 16pt;
+}
+
+main {
+    background-color: rgb(36 31 49 / 0.8);
+}
+
+footer {
+    background-color: rgb(36 31 49 / 0.9);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+div#zeroHeight { /*I know it's hacky but I don't know any other way around it.*/
+    height: 0px;
 }

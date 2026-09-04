@@ -6,6 +6,17 @@
         <title><%= env.NAME %></title>
     </head>
     <body>
-        <h1><%= env.NAME %></h1>
+        <header>
+            <a href="/"><%= env.NAME %></a>
+            <div style="flex: auto;"></div>
+            <a href="/new">New paste...</a>
+        </header>
+        <main>
+            <div id="zeroHeight">&#8203;</div>
+            <h1><%= env.NAME %></h1>
+            <p><%= env.NAME %> is a</p>
+        </main>
+        <footer>
+        </footer>
     </body>
 </html>
