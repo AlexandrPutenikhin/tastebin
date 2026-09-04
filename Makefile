@@ -1,4 +1,7 @@
 SRC_DIR=src/
 
-dev:
+all:
 	node $(SRC_DIR)app.ts
+
+checkTS:
+	npx tsc

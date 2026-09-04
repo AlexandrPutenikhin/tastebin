@@ -20,7 +20,7 @@ import express, { type Express, type Request, type Response } from 'express';
 import 'dotenv/config';
 
 const app: Express = express();
-const port: Number = process.env.PORT;
+const port: Number = Number(process.env.PORT);
 
 app.set('view engine', 'ejs');
 
