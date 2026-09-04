@@ -1,5 +1,5 @@
 {
-    "name": "jastebin",
+    "name": "tastebin",
     "version": "0.0.0",
     "description": "Jastebin is a Pastebin clone.",
     "main": "app.ts",
