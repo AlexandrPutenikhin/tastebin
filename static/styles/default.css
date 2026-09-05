@@ -25,6 +25,7 @@ main {
     padding-left: 16px;
     padding-right: 16px;
     flex: auto;
+    backdrop-filter: blur(10px);
 }
 
 footer {
