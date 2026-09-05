@@ -4,9 +4,9 @@
     "description": "Jastebin is a Pastebin clone.",
     "main": "app.ts",
     "scripts": {
-        "predev": "make checkTS",
-        "dev": "make",
-        "prod": "make"
+        "predev": "npx tsc",
+        "dev": "node src/app.ts",
+        "prod": "node src/app.ts"
     },
     "repository": {
         "type": "git",
