@@ -28,10 +28,12 @@ app.set('view engine', 'ejs');
 app.use('/static', express.static('static'));
 
 app.get('/', (req: Request, res: Response) => {
-    res.render('layout', { name: name });
+    res.render('layout', { name: name, templ: 'index',
+                           templParams: {}});
 });
 app.get('/new', (req: Request, res: Response) => {
-    res.render('layout', { name: name, title: "New" });
+    res.render('layout', { name: name, title: "New", templ: 'new',
+                           templParams: {} });
 });
 
 app.listen(port, () => {
