@@ -25,8 +25,12 @@ const port: Number = Number(process.env.PORT);
 app.set('view engine', 'ejs');
 
 app.use('/static', express.static('static'));
+
 app.get('/', (req: Request, res: Response) => {
     res.render('layout', { env: process.env });
+});
+app.get('/new', (req: Request, res: Response) => {
+    res.render('layout', { env: process.env, title: "New" });
 });
 
 app.listen(port, () => {
