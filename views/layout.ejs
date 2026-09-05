@@ -3,7 +3,11 @@
     <head>
         <link rel="icon" href="/static/img/icon.png">
         <link rel="stylesheet" href="/static/styles/default.css">
-        <title><%= env.NAME %></title>
+        <% if (typeof title !== 'undefined') { %>
+            <title><%= env.NAME + ' | ' + title %></title>
+        <% } else { %>
+            <title><%= env.NAME %></title>
+        <% } %>
     </head>
     <body>
         <header>
@@ -12,8 +16,6 @@
             <a href="/new">New paste...</a>
         </header>
         <main>
-            <h1><%= env.NAME %></h1>
-            <p><%= env.NAME %> is a</p>
         </main>
         <footer>
             This website is free software. You can find source code
