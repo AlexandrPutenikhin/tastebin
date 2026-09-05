@@ -4,14 +4,14 @@
         <link rel="icon" href="/static/img/icon.png">
         <link rel="stylesheet" href="/static/styles/default.css">
         <% if (typeof title !== 'undefined') { %>
-            <title><%= env.NAME + ' | ' + title %></title>
+            <title><%= name + ' | ' + title %></title>
         <% } else { %>
-            <title><%= env.NAME %></title>
+            <title><%= name %></title>
         <% } %>
     </head>
     <body>
         <header>
-            <a href="/"><%= env.NAME %></a>
+            <a href="/"><%= name %></a>
             <div style="flex: auto;"></div>
             <a href="/new">New paste...</a>
         </header>

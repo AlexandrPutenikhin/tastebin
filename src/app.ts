@@ -21,16 +21,17 @@ import 'dotenv/config';
 
 const app: Express = express();
 const port: Number = Number(process.env.PORT);
+const name: string = process.env.NAME!;
 
 app.set('view engine', 'ejs');
 
 app.use('/static', express.static('static'));
 
 app.get('/', (req: Request, res: Response) => {
-    res.render('layout', { env: process.env });
+    res.render('layout', { name: name });
 });
 app.get('/new', (req: Request, res: Response) => {
-    res.render('layout', { env: process.env, title: "New" });
+    res.render('layout', { name: name, title: "New" });
 });
 
 app.listen(port, () => {
